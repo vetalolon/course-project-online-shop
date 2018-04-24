@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { ListItemsComponent } from './list-items/list-items.component';
 import { ItemComponent } from './list-items/item/item.component';
 import { MatCardModule } from '@angular/material/card';
+import { ItemService } from './services/item-service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
